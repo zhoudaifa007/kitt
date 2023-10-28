@@ -354,10 +354,8 @@ export const PreJoin = ({
             setLang(e.target.value);
           }}
         >
+          <option value="cmn-CN">中文 (简体)</option>
           <option value="en-US">English (United States)</option>
-          <option value="fr-FR">French (France)</option>
-          <option value="de-DE">German (Germany)</option>
-          <option value="es-ES">Spanish</option>
         </select>
         <input
           className="lk-form-control"

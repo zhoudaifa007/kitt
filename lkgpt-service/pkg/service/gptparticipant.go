@@ -61,6 +61,12 @@ var (
 			TranscriberCode:  "es-ES",
 			SynthesizerModel: "es-ES-Wavenet-B",
 		},
+		"cmn-CN": {
+			Code:             "cmn-CN",
+			Label:            "Simplified Chinese",
+			TranscriberCode:  "cmn-CN",
+			SynthesizerModel: "cmn-CN-Standard-A",
+		},
 	}
 	DefaultLanguage = Languages["en-US"]
 )
