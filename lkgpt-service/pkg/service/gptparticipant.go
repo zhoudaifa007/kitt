@@ -50,7 +50,7 @@ var (
 			SynthesizerModel: "cmn-CN-Standard-A",
 		},
 	}
-	DefaultLanguage = Languages["en-US"]
+	DefaultLanguage = Languages["cmn-CN"]
 )
 
 type Language struct {
