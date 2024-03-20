@@ -27,11 +27,11 @@ var (
 	ErrCodecNotSupported = errors.New("this codec isn't supported")
 	ErrBusy              = errors.New("the gpt participant is already used")
 
-	BotIdentity = "KITT"
+	BotIdentity = "TARS"
 
 	// Naive trigger/activation implementation
 	GreetingWords = []string{"hi", "hello", "hey", "hallo", "salut", "bonjour", "hola", "eh", "ey"}
-	NameWords     = []string{"kit", "gpt", "kitt", "livekit", "live-kit", "kid"}
+	NameWords     = []string{"kit", "gpt", "kitt", "livekit", "live-kit", "kid", "tars", "tar", "tarz"}
 
 	ActivationWordsLen = 2
 	ActivationTimeout  = 4 * time.Second // If the participant didn't say anything for this duration, stop listening
@@ -43,26 +43,14 @@ var (
 			TranscriberCode:  "en-US",
 			SynthesizerModel: "en-US-Wavenet-D",
 		},
-		"fr-FR": {
-			Code:             "fr-FR",
-			Label:            "Français",
-			TranscriberCode:  "fr-FR",
-			SynthesizerModel: "fr-FR-Wavenet-B",
-		},
-		"de-DE": {
-			Code:             "de-DE",
-			Label:            "German",
-			TranscriberCode:  "de-DE",
-			SynthesizerModel: "de-DE-Wavenet-B",
-		},
-		"es-ES": {
-			Code:             "es-ES",
-			Label:            "Spanish",
-			TranscriberCode:  "es-ES",
-			SynthesizerModel: "es-ES-Wavenet-B",
+		"cmn-CN": {
+			Code:             "cmn-CN",
+			Label:            "Simplified Chinese",
+			TranscriberCode:  "cmn-CN",
+			SynthesizerModel: "cmn-CN-Standard-A",
 		},
 	}
-	DefaultLanguage = Languages["en-US"]
+	DefaultLanguage = Languages["cmn-CN"]
 )
 
 type Language struct {

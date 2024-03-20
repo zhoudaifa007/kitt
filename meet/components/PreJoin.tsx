@@ -355,9 +355,7 @@ export const PreJoin = ({
           }}
         >
           <option value="en-US">English (United States)</option>
-          <option value="fr-FR">French (France)</option>
-          <option value="de-DE">German (Germany)</option>
-          <option value="es-ES">Spanish</option>
+          <option value="cmn-CN">中文 (简体)</option>
         </select>
         <input
           className="lk-form-control"
